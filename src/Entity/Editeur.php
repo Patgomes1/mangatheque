@@ -38,4 +38,9 @@ class Editeur
 
         return $this;
     }
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Personne", inversedBy="Editeurs")
+     */
+
+    private $personne;
 }

@@ -55,4 +55,20 @@ class Serie
 
         return $this;
     }
+
+    public function __toString()
+    {
+        return $this-> nom;
+    }
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Editeur", mappedBy="serie")
+     */
+
+    private $editeurs;
+
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Scenariste", mappedBy="serie")
+     */
+
+    private $scenariste;
 }

@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\DessinateurRepository;
 use Doctrine\ORM\Mapping as ORM;
+use App\Entity\Personne;
 
 /**
  * @ORM\Entity(repositoryClass=DessinateurRepository::class)

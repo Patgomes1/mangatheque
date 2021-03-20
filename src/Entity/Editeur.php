@@ -39,8 +39,8 @@ class Editeur
         return $this;
     }
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Personne", inversedBy="Editeurs")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Serie", inversedBy="Editeurs")
      */
 
-    private $personne;
+    private $serie;
 }

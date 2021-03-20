@@ -123,4 +123,6 @@ class Manga
 
         return $this;
     }
+
+
 }

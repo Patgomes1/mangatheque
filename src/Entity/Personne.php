@@ -21,17 +21,6 @@ class Personne
     {
         return $this->id;
     }
-    /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Dessinateur", mappedBy="personne")
-     */
-
-    private $dessinateur;
-
-    /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Editeur", mappedBy="personne")
-     */
-
-    private $scenaristes;
 
     /**
      * @ORM\Column(type="string", length=30)

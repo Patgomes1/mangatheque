@@ -23,9 +23,5 @@ class Dessinateur
         return $this->id;
     }
 
-    /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Personne", inversedBy="Dessinateurs")
-     */
 
-    private $personne;
 }

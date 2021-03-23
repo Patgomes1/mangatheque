@@ -10,18 +10,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6f37654-1267-430d-a3e5-dbd260e49d8f" name="Default Changelist" comment="commit avec easy admin&#10;crud realiser &#10;menu fait">
+    <list default="true" id="b6f37654-1267-430d-a3e5-dbd260e49d8f" name="Default Changelist" comment="dernier de la journée 20/03/2021&#10;j'essaye de faire l'heritage des classe por les mettre dans easyadmin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210312135511.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210317130227.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Dessinateur.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Dessinateur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Editeur.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Editeur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Manga.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Manga.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Personne.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Personne.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Scenariste.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Scenariste.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Serie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Serie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/editeur/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/editeur/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +202,10 @@
       <workItem from="1616240458654" duration="1284000" />
       <workItem from="1616243719255" duration="3455000" />
       <workItem from="1616247303552" duration="1371000" />
-      <workItem from="1616248704757" duration="11050000" />
+      <workItem from="1616248704757" duration="11131000" />
+      <workItem from="1616264233779" duration="38000" />
+      <workItem from="1616329725134" duration="2565000" />
+      <workItem from="1616517420945" duration="5116000" />
     </task>
     <task id="LOCAL-00001" summary="commit avec easy admin(normalement)">
       <created>1616244449743</created>
@@ -240,11 +235,28 @@
       <option name="project" value="LOCAL" />
       <updated>1616252727100</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="dernier de la journée 20/03/2021&#10;j'essaye de faire l'heritage des classe por les mettre dans easyadmin">
+      <created>1616264110007</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1616264110007</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -263,7 +275,8 @@
     <MESSAGE value="commit avec easy admin(normalement) dernier" />
     <MESSAGE value="commit avec easy admin&#10;crud realiser" />
     <MESSAGE value="commit avec easy admin&#10;crud realiser &#10;menu fait" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit avec easy admin&#10;crud realiser &#10;menu fait" />
+    <MESSAGE value="dernier de la journée 20/03/2021&#10;j'essaye de faire l'heritage des classe por les mettre dans easyadmin" />
+    <option name="LAST_COMMIT_MESSAGE" value="dernier de la journée 20/03/2021&#10;j'essaye de faire l'heritage des classe por les mettre dans easyadmin" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

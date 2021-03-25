@@ -44,10 +44,10 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linktoDashboard('Menu', 'fa fa-home');
         yield MenuItem::linkToCrud('Editeur', 'fa fa-tags', Editeur::class);
         yield MenuItem::linkToCrud('Manga', 'fa fa-tags', Manga::class);
-        yield MenuItem::linkToCrud('Dessinateur', 'fa fa-tags', Dessinateur::class);
+        //yield MenuItem::linkToCrud('Dessinateur', 'fa fa-tags', Dessinateur::class);
         yield MenuItem::linkToCrud('Categories', 'fa fa-tags', Categorie::class);
         yield MenuItem::linkToCrud('Personne', 'fa fa-tags', Personne::class);
-        yield MenuItem::linkToCrud('Scenariste', 'fa fa-tags', Scenariste::class);
+        //yield MenuItem::linkToCrud('Scenariste', 'fa fa-tags', Scenariste::class);
         yield MenuItem::linkToCrud('Serie', 'fa fa-tags', Serie::class);
     }
 }

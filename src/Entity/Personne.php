@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\PersonneRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -32,6 +34,26 @@ class Personne
      */
     private $prenom;
 
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $scenariste;
+
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $dessinateur;
+
+    /**
+     * @ORM\OneToMany(targetEntity=Serie::class, mappedBy="personne")
+     */
+    private $series;
+
+    public function __construct()
+    {
+        $this->series = new ArrayCollection();
+    }
+
     public function getNom(): ?string
     {
         return $this->nom;
@@ -54,5 +76,64 @@ class Personne
         $this->prenom = $prenom;
 
         return $this;
+    }
+
+    public function getScenariste(): ?bool
+    {
+        return $this->scenariste;
+    }
+
+    public function setScenariste(bool $scenariste): self
+    {
+        $this->scenariste = $scenariste;
+
+        return $this;
+    }
+
+    public function getDessinateur(): ?bool
+    {
+        return $this->dessinateur;
+    }
+
+    public function setDessinateur(bool $dessinateur): self
+    {
+        $this->dessinateur = $dessinateur;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Serie[]
+     */
+    public function getSeries(): Collection
+    {
+        return $this->series;
+    }
+
+    public function addSeries(Serie $series): self
+    {
+        if (!$this->series->contains($series)) {
+            $this->series[] = $series;
+            $series->setPersonne($this);
+        }
+
+        return $this;
+    }
+
+    public function removeSeries(Serie $series): self
+    {
+        if ($this->series->removeElement($series)) {
+            // set the owning side to null (unless already changed)
+            if ($series->getPersonne() === $this) {
+                $series->setPersonne(null);
+            }
+        }
+
+        return $this;
+    }
+
+    public function __toString()
+    {
+        return $this->nom;
     }
 }

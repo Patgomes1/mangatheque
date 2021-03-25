@@ -23,7 +23,7 @@ class Serie
     private $nom;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="boolean")
      */
     private $etat;
 
@@ -44,22 +44,22 @@ class Serie
         return $this;
     }
 
-    public function getEtat(): ?int
+    public function getEtat(): ?bool
     {
         return $this->etat;
     }
 
-    public function setEtat(int $etat): self
+    public function setEtat(bool $etat): self
     {
         $this->etat = $etat;
 
         return $this;
     }
 
-    public function __toString()
+    /*public function __toString()
     {
         return $this-> nom;
-    }
+    }*/
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\Editeur", mappedBy="serie")
      */
@@ -71,4 +71,43 @@ class Serie
      */
 
     private $scenariste;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=Categorie::class, inversedBy="series")
+     */
+    private $categorie;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=Personne::class, inversedBy="series")
+     */
+    private $personne;
+
+    public function getCategorie(): ?Categorie
+    {
+        return $this->categorie;
+    }
+
+    public function setCategorie(?Categorie $categorie): self
+    {
+        $this->categorie = $categorie;
+
+        return $this;
+    }
+
+    public function getPersonne(): ?Personne
+    {
+        return $this->personne;
+    }
+
+    public function setPersonne(?Personne $personne): self
+    {
+        $this->personne = $personne;
+
+        return $this;
+    }
+
+    /*public function __toString()
+    {
+        return $this->etat;
+    }*/
 }

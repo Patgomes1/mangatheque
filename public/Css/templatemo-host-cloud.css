@@ -85,7 +85,7 @@ a.gradient-button:hover {
 }
 
 .page-heading {
-    background-image: url(../images/heading-bg.jpg);
+    background-image: url(../img/heading-bg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -351,7 +351,7 @@ header {
 
 /* Banner Style */
 .banner {
-    background-image: url(../images/banner-bg.jpg);
+    background-image: url(../img/banner-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 300px 0px;
@@ -527,7 +527,7 @@ header {
     margin-top: 140px;
 }
 .background-image-pricing {
-    background-image: url(../images/pricing-bg.jpg);
+    background-image: url(../img/pricing-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 500px;
@@ -732,7 +732,7 @@ header {
 
 /* Footer Style */
 footer {
-    background-image: url(../images/footer-bg.jpg);
+    background-image: url(../img/footer-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

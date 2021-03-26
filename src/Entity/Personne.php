@@ -134,6 +134,6 @@ class Personne
 
     public function __toString()
     {
-        return $this->nom;
+        return $this->prenom.' '.$this->nom;
     }
 }

@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\SerieRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -82,6 +84,16 @@ class Serie
      */
     private $personne;
 
+    /**
+     * @ORM\OneToMany(targetEntity=Manga::class, mappedBy="serie")
+     */
+    private $mangas;
+
+    public function __construct()
+    {
+        $this->mangas = new ArrayCollection();
+    }
+
     public function getCategorie(): ?Categorie
     {
         return $this->categorie;
@@ -110,4 +122,39 @@ class Serie
     {
         return $this->etat;
     }*/
+
+    /**
+     * @return Collection|Manga[]
+     */
+    public function getMangas(): Collection
+    {
+        return $this->mangas;
+    }
+
+    public function addManga(Manga $manga): self
+    {
+        if (!$this->mangas->contains($manga)) {
+            $this->mangas[] = $manga;
+            $manga->setSerie($this);
+        }
+
+        return $this;
+    }
+
+    public function removeManga(Manga $manga): self
+    {
+        if ($this->mangas->removeElement($manga)) {
+            // set the owning side to null (unless already changed)
+            if ($manga->getSerie() === $this) {
+                $manga->setSerie(null);
+            }
+        }
+
+        return $this;
+    }
+
+    public function __toString()
+    {
+        return $this->nom;
+    }
 }

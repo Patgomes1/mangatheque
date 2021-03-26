@@ -47,6 +47,11 @@ class Manga
      */
     private $dateParution;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Serie::class, inversedBy="mangas")
+     */
+    private $serie;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -120,6 +125,18 @@ class Manga
     public function setDateParution(\DateTimeInterface $dateParution): self
     {
         $this->dateParution = $dateParution;
+
+        return $this;
+    }
+
+    public function getSerie(): ?Serie
+    {
+        return $this->serie;
+    }
+
+    public function setSerie(?Serie $serie): self
+    {
+        $this->serie = $serie;
 
         return $this;
     }

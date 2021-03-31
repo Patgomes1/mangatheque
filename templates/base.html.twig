@@ -29,6 +29,7 @@
         {% block javascripts %}
 
         {% endblock %}
+        {% block nav %}
     </head>
     <body class="landing">
 
@@ -38,15 +39,17 @@
         <nav id="nav">
             <ul>
                 <li><a href="">Accueil</a></li>
-                <li><a href="">Categories</a></li>
-                <li><a href="">Series</a></li>
-                <li><a href="">Editeurs</a></li>
-                <li><a href="">Auteurs</a></li>
+                <li><a href="{{ path('categorie') }}">Categories</a></li>
+                <li><a href="{{ path('serie') }}">Series</a></li>
+                <li><a href="{{ path('editeur') }}">Editeurs</a></li>
+                <li><a href="{{ path('personne') }}">Auteurs</a></li>
                 <li><a href="#" class="button special">Connexion</a></li>
             </ul>
         </nav>
     </header>
+        {% endblock %}
 
+    {% block premier %}
     <!-- Banner -->
     <section id="banner">
         <h2>nom du connecté</h2>
@@ -87,6 +90,7 @@
         </div>
     </section>
 
+    {% endblock %}
     <!-- Footer -->
     <footer id="footer">
         <div class="container">

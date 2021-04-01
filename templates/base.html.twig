@@ -43,7 +43,13 @@
                 <li><a href="{{ path('serie') }}">Series</a></li>
                 <li><a href="{{ path('editeur') }}">Editeurs</a></li>
                 <li><a href="{{ path('personne') }}">Auteurs</a></li>
-                <li><a href="#" class="button special">Connexion</a></li>
+                <li>
+                    {% if is_granted('ROLE_ADMIN') %}
+                    <a href="{{ path('admin') }}">admin</a>
+                        {% else %}
+                            <a href="{{ path('app_login') }}">login</a>
+                    {% endif %}
+                </li>
             </ul>
         </nav>
     </header>

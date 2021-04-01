@@ -10,10 +10,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6f37654-1267-430d-a3e5-dbd260e49d8f" name="Default Changelist" comment="31/03/2021&#10;dernier">
+    <list default="true" id="b6f37654-1267-430d-a3e5-dbd260e49d8f" name="Default Changelist" comment="31/03/2021&#10;dernier 17h">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/categorie/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/categorie/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/editeur/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/editeur/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/personne/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/personne/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/serie/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/serie/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/services.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +215,8 @@
       <workItem from="1616598789079" duration="12658000" />
       <workItem from="1616768336175" duration="60000" />
       <workItem from="1616769383179" duration="3413000" />
-      <workItem from="1617193620425" duration="7504000" />
+      <workItem from="1617193620425" duration="7803000" />
+      <workItem from="1617284150409" duration="1246000" />
     </task>
     <task id="LOCAL-00001" summary="commit avec easy admin(normalement)">
       <created>1616244449743</created>
@@ -284,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617199502929</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="31/03/2021&#10;dernier 17h">
+      <created>1617202378703</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1617202378703</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +334,8 @@
     <MESSAGE value="26/03/2021" />
     <MESSAGE value="26/03/2021&#10;dernier" />
     <MESSAGE value="31/03/2021&#10;dernier" />
-    <option name="LAST_COMMIT_MESSAGE" value="31/03/2021&#10;dernier" />
+    <MESSAGE value="31/03/2021&#10;dernier 17h" />
+    <option name="LAST_COMMIT_MESSAGE" value="31/03/2021&#10;dernier 17h" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

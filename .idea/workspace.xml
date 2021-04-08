@@ -12,8 +12,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b6f37654-1267-430d-a3e5-dbd260e49d8f" name="Default Changelist" comment="01/04/2021&#10;15:57">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +211,10 @@
       <workItem from="1616768336175" duration="60000" />
       <workItem from="1616769383179" duration="3413000" />
       <workItem from="1617193620425" duration="7803000" />
-      <workItem from="1617284150409" duration="4433000" />
+      <workItem from="1617284150409" duration="4526000" />
+      <workItem from="1617349079271" duration="4000" />
+      <workItem from="1617618729032" duration="6000" />
+      <workItem from="1617873148694" duration="2326000" />
     </task>
     <task id="LOCAL-00001" summary="commit avec easy admin(normalement)">
       <created>1616244449743</created>
@@ -299,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617285437594</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="01/04/2021&#10;15:57">
+      <created>1617288709742</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1617288709742</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -16,7 +16,15 @@
             <li><a href="{{ path('categorie') }}">Categories</a></li>
             <li><a href="{{ path('serie') }}">Series</a></li>
             <li><a href="{{ path('personne') }}">Auteurs</a></li>
-            <li><a href="#" class="button special">Connexion</a></li>
+            <li>
+                {% if is_granted('ROLE_ADMIN') %}
+                <li><a href="{{ path('admin') }}">admin</a></li>
+                <li><a href="{{ path('app_logout') }}">Deconnexion</a></li>
+
+                {% else %}
+                <li><a href="{{ path('app_login') }}">login</a></li>
+                {% endif %}
+            </li>
         </ul>
     </nav>
 </header>
@@ -24,5 +32,23 @@
 
 {% block premier %}
 
-{% endblock %}
+<section id="banner">
+    <h2>Editeur</h2>
+    <ul class="actions">
+        <li>
+            <a href="#" class="button big">L'éditeur du moment !</a>
+        </li>
+    </ul>
+</section>
+
+<!-- Three -->
+<section id="three" class="wrapper style3 special">
+    <div class="container">
+        <header class="major">
+            <h2>Afficher les editeurs ici</h2>
+            <p>boucle</p>
+        </header>
+    </div>
+
+    {% endblock %}
 {% endblock %}

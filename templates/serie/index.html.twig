@@ -2,6 +2,29 @@
 
 {% block title %}Hello SerieController!{% endblock %}
 
+{% block haut %}
+
+    <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script>
+
+{% endblock %}
+
+{% block stylesheets %}
+
+    <!-- Bootstrap core CSS -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="css/skel.css">
+    <link rel="stylesheet" href=css/style.css">
+    <link rel="stylesheet" href="css/style-xlarge.css">
+
+
+{% endblock %}
+
 {% block body %}
     {% block nav %}
 </head>
@@ -16,13 +39,37 @@
             <li><a href="{{ path('categorie') }}">Categories</a></li>
             <li><a href="{{ path('editeur') }}">Editeurs</a></li>
             <li><a href="{{ path('personne') }}">Auteurs</a></li>
-            <li><a href="#" class="button special">Connexion</a></li>
+            {% if is_granted('ROLE_ADMIN') %}
+                <li><a href="{{ path('admin') }}">admin</a></li>
+                <li><a href="{{ path('app_logout') }}">Deconnexion</a></li>
+
+            {% else %}
+            <li><a href="{{ path('app_login') }}">login</a></li>
+            {% endif %}
         </ul>
     </nav>
 </header>
 {% endblock %}
 
 {% block premier %}
+
+<section id="banner">
+    <h2>Series</h2>
+    <ul class="actions">
+        <li>
+            <a href="#" class="button big">La serie du moment !</a>
+        </li>
+    </ul>
+</section>
+
+<!-- Three -->
+<section id="three" class="wrapper style3 special">
+    <div class="container">
+        <header class="major">
+            <h2>Afficher les series ici</h2>
+            <p>boucle</p>
+        </header>
+    </div>
 
 {% endblock %}
 {% endblock %}

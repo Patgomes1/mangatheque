@@ -29,6 +29,11 @@ class Categorie
      */
     private $series;
 
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $imageCateg;
+
     public function __construct()
     {
         $this->series = new ArrayCollection();
@@ -83,5 +88,17 @@ class Categorie
     public function __toString()
     {
         return $this->nom;
+    }
+
+    public function getImageCateg(): ?string
+    {
+        return $this->imageCateg;
+    }
+
+    public function setImageCateg(?string $imageCateg): self
+    {
+        $this->imageCateg = $imageCateg;
+
+        return $this;
     }
 }

@@ -3,18 +3,38 @@
 {% block title %}Hello PageController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    {% block nav %}
+</head>
+<body class="landing">
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/c2e13/Desktop/mangatheque/src/Controller/PageController.php'|file_link(0) }}">src/Controller/PageController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/c2e13/Desktop/mangatheque/templates/page/index.html.twig'|file_link(0) }}">templates/page/index.html.twig</a></code></li>
-    </ul>
-</div>
+<!-- Header -->
+<header id="header">
+    <h1><a href="index.html">Mangatheque</a></h1>
+    <nav id="nav">
+        <ul>
+            <li><a href="">Accueil</a></li>
+            <li><a href="{{ path('categorie') }}">Categories</a></li>
+            <li><a href="{{ path('serie') }}">Series</a></li>
+            <li><a href="{{ path('editeur') }}">Editeurs</a></li>
+            <li><a href="{{ path('personne') }}">Auteurs</a></li>
+            <li>
+                {% if is_granted('ROLE_ADMIN') %}
+                    <a href="{{ path('admin') }}">admin</a>
+
+                    <a href="{{ path('app_logout') }}">deconnexion</a>
+                {% else %}
+                    <a href="{{ path('/app_logout') }}">deconnexion</a>
+                {% endif %}
+            </li>
+        </ul>
+    </nav>
+</header>
+{% endblock %}
+    {% block premier %}
+
+        <h2>{{  }}</h2>
+
+    {% endblock%}
+
 {% endblock %}

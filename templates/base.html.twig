@@ -8,11 +8,15 @@
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta name="description" content="" />
         <meta name="keywords" content="" />
+        {% block haut %}
+
         <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
         <script src="js/jquery.min.js"></script>
         <script src="js/skel.min.js"></script>
         <script src="js/skel-layers.min.js"></script>
         <script src="js/init.js"></script>
+
+        {% endblock %}
         {% block stylesheets %}
 
         <!-- Bootstrap core CSS -->
@@ -45,9 +49,11 @@
                 <li><a href="{{ path('personne') }}">Auteurs</a></li>
                 <li>
                     {% if is_granted('ROLE_ADMIN') %}
-                    <a href="{{ path('admin') }}">admin</a>
+                    <li><a href="{{ path('admin') }}">admin</a></li>
+                    <li><a href="{{ path('app_logout') }}">Deconnexion</a></li>
+
                         {% else %}
-                            <a href="{{ path('app_login') }}">login</a>
+                        <li><a href="{{ path('app_login') }}">login</a></li>
                     {% endif %}
                 </li>
             </ul>

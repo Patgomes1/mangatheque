@@ -66,8 +66,16 @@
 <section id="three" class="wrapper style3 special">
     <div class="container">
         <header class="major">
-            <h2>Afficher les series ici</h2>
-            <p>boucle</p>
+            <h2>Voici les series les plus populaire.</h2>
+
+            {% for laserie in series %}
+                <br>
+                <li>  {{ laserie.nom  }}</li>
+
+                <a  onclick="test()"> <img style="max-width:750px; max-height: 500px;min-width:500px;min-height: 250px;" src="{{ laserie.imageSerie }}"/></a>
+                <br>
+
+            {% endfor %}
         </header>
     </div>
 

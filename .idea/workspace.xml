@@ -10,23 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6f37654-1267-430d-a3e5-dbd260e49d8f" name="Default Changelist" comment="08/04/2021&#10;redirection apres connexion faite">
-      <change beforePath="$PROJECT_DIR$/.idea/mangatheque.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mangatheque.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="b6f37654-1267-430d-a3e5-dbd260e49d8f" name="Default Changelist" comment="09/04/2021&#10;image mise sur le categorie">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CategorieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CategorieController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Categorie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Categorie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/categorie/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/categorie/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/editeur/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/editeur/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/page/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/page/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/personne/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/personne/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SerieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SerieController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Editeur.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Editeur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Serie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Serie.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/serie/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/serie/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -234,7 +222,7 @@
       <workItem from="1617349079271" duration="4000" />
       <workItem from="1617618729032" duration="6000" />
       <workItem from="1617873148694" duration="16896000" />
-      <workItem from="1617964215187" duration="5515000" />
+      <workItem from="1617964215187" duration="12504000" />
     </task>
     <task id="LOCAL-00001" summary="commit avec easy admin(normalement)">
       <created>1616244449743</created>
@@ -334,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617875612231</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="09/04/2021&#10;image mise sur le categorie">
+      <created>1617969818532</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1617969818533</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,7 +371,8 @@
     <MESSAGE value="31/03/2021&#10;dernier 17h" />
     <MESSAGE value="01/04/2021&#10;15:57" />
     <MESSAGE value="08/04/2021&#10;redirection apres connexion faite" />
-    <option name="LAST_COMMIT_MESSAGE" value="08/04/2021&#10;redirection apres connexion faite" />
+    <MESSAGE value="09/04/2021&#10;image mise sur le categorie" />
+    <option name="LAST_COMMIT_MESSAGE" value="09/04/2021&#10;image mise sur le categorie" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

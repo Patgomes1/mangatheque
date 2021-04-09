@@ -89,6 +89,16 @@ class Serie
      */
     private $mangas;
 
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $imageSerie;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=Editeur::class, inversedBy="series")
+     */
+    private $editeur;
+
     public function __construct()
     {
         $this->mangas = new ArrayCollection();
@@ -156,5 +166,29 @@ class Serie
     public function __toString()
     {
         return $this->nom;
+    }
+
+    public function getImageSerie(): ?string
+    {
+        return $this->imageSerie;
+    }
+
+    public function setImageSerie(?string $imageSerie): self
+    {
+        $this->imageSerie = $imageSerie;
+
+        return $this;
+    }
+
+    public function getEditeur(): ?Editeur
+    {
+        return $this->editeur;
+    }
+
+    public function setEditeur(?Editeur $editeur): self
+    {
+        $this->editeur = $editeur;
+
+        return $this;
     }
 }

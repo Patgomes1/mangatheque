@@ -51,6 +51,11 @@ class Editeur
      */
     private $series;
 
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $imageEditeur;
+
     public function __construct()
     {
         $this->series = new ArrayCollection();
@@ -86,6 +91,18 @@ class Editeur
                 $series->setEditeur(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getImageEditeur(): ?string
+    {
+        return $this->imageEditeur;
+    }
+
+    public function setImageEditeur(?string $imageEditeur): self
+    {
+        $this->imageEditeur = $imageEditeur;
 
         return $this;
     }

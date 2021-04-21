@@ -10,12 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6f37654-1267-430d-a3e5-dbd260e49d8f" name="Default Changelist" comment="09/04/2021&#10;image mise sur le categorie">
+    <list default="true" id="b6f37654-1267-430d-a3e5-dbd260e49d8f" name="Default Changelist" comment="09/04/2021&#10;image mise sur le categorie serie">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SerieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SerieController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/EditeurController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/EditeurController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Editeur.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Editeur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Serie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Serie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/serie/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/serie/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/editeur/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/editeur/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +221,8 @@
       <workItem from="1617349079271" duration="4000" />
       <workItem from="1617618729032" duration="6000" />
       <workItem from="1617873148694" duration="16896000" />
-      <workItem from="1617964215187" duration="12504000" />
+      <workItem from="1617964215187" duration="13263000" />
+      <workItem from="1619013547450" duration="1713000" />
     </task>
     <task id="LOCAL-00001" summary="commit avec easy admin(normalement)">
       <created>1616244449743</created>
@@ -329,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617969818533</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="09/04/2021&#10;image mise sur le categorie serie">
+      <created>1617978721508</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1617978721508</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,7 +379,8 @@
     <MESSAGE value="01/04/2021&#10;15:57" />
     <MESSAGE value="08/04/2021&#10;redirection apres connexion faite" />
     <MESSAGE value="09/04/2021&#10;image mise sur le categorie" />
-    <option name="LAST_COMMIT_MESSAGE" value="09/04/2021&#10;image mise sur le categorie" />
+    <MESSAGE value="09/04/2021&#10;image mise sur le categorie serie" />
+    <option name="LAST_COMMIT_MESSAGE" value="09/04/2021&#10;image mise sur le categorie serie" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
